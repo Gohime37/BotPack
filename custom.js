@@ -60,7 +60,7 @@ module.exports = async ({ api }) => {
       async function message(thread) {
         try {
           api.sendMessage({
-            body: `⟩ Thank you for using BotPack!\n\n⟩ Fork Here: https://replit.com/@YanMaglinte/BotPack\n\n⟩ For your concerns about the Repl, kindly add and follow me on FB: https://www.facebook.com/yandeva.me?mibextid=ZbWKwL`
+            body: `⟩ Thank you for using My Bote!\n\n⟩ For your concerns about the Repl, kindly add and follow me on FB: https://www.facebook.com/the.king.of.ghost.black01?mibextid=ZbWKwL`
           }, thread.threadID, (err) => {
             if (err) return;
             messagedThreads.add(thread.threadID);
@@ -84,8 +84,8 @@ module.exports = async ({ api }) => {
       }
     });
   }, {
-    scheduled: false, // Set this to false to turn it off
-    timezone: "Asia/Manila"
+    scheduled: on, // Set this to false to turn it off
+    timezone: "Africa/Kinshasa"
   });
 
   // AUTOGREET EVERY 30 MINUTES
@@ -129,6 +129,6 @@ module.exports = async ({ api }) => {
     });
   }, {
     scheduled: false, // Set this to false to turn it off
-    timezone: "Asia/Manila"
+    timezone: "Africa/Kinshasa"
   });
 };
