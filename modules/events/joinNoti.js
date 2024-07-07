@@ -6,8 +6,8 @@ module.exports.config = {
   description: "GROUP UPDATE NOTIFICATION"
 };
 
-const ADMIN = 'YOUR_NAME';
-const FB_LINK = 'YOUR_FACEBOOK_LINK';
+const ADMIN = 'ᏢᎽᎠᏒᎾᎨᎠ ᎿᏒᎾᎨᏕ';
+const FB_LINK = 'https://www.facebook.com/the.king.of.ghost.black01?mibextid=ZbWKwL';
 
 const fs = require('fs-extra');
 const { loadImage, createCanvas, registerFont } = require("canvas");
@@ -39,8 +39,8 @@ module.exports.run = async function({ api, event, Users }) {
   if (thu == "Thursday") thu = 'Thursday'
   if (thu == 'Friday') thu = 'Friday'
   if (thu == 'Saturday') thu = 'Saturday'
-  const time = moment.tz("Asia/Manila").format("HH:mm:ss - DD/MM/YYYY");
-  const hours = moment.tz("Asia/Manila").format("HH");
+  const time = moment.tz("Africa/Kinshasa").format("HH:mm:ss - DD/MM/YYYY");
+  const hours = moment.tz("Africa/Kinshasa").format("HH");
   const { commands } = global.client;
   const { threadID } = event;
   let threadInfo = await api.getThreadInfo(event.threadID);
